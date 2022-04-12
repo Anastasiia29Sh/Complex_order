@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Круизы</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="../css/kruis.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <img src="../img/top.jpg" width="769" height="127" />
+        </header>
+        <section>
+            <aside>
+                <ul>
+                    <li>
+                        <img id='about' src="../img/menu_01.gif" width="23" height="24"
+                            align="absmiddle">&nbsp;&nbsp;&nbsp;<a href="../index.htm" class="over">ГЛАВНАЯ </a>
+                    </li>
+                    <li>
+                        <img id='price' src="../img/menu_02.gif" width="23" height="24"
+                            align="absmiddle">&nbsp;&nbsp;&nbsp;<a href="#">ЦЕНЫ</a>
+                    </li>
+                    <li>
+                        <img id='services' src="../img/menu_03.gif" width="23" height="24"
+                            align="absmiddle">&nbsp;&nbsp;&nbsp;<a href="zakaz.php">УСЛУГИ</a>
+                    </li>
+                    <li>
+                        <img id='gallery' src="../img/menu_04.gif" width="23" height="24"
+                            align="absmiddle">&nbsp;&nbsp;&nbsp;<a href="#">ФОТОГАЛЕРЕЯ</a>
+                    </li>
+                    <li>
+                        <img id='where' src="../img/menu_05.gif" width="23" height="24"
+                            align="absmiddle">&nbsp;&nbsp;&nbsp;<a href="#">КООРДИНАТЫ</a>
+                    </li>
+                </ul>
+            </aside>
+            <section>
+                <header>
+                    <h1 style="font-size: 18px; margin-right: 10px; margin-top: 7px;">
+                        Оформление заказа
+                        <br> <img src="../img/line.gif" width="402" height="2" align="right">
+                    </h1>
+
+                </header>
+                <article>
+                    <p>
+
+                    </p>
+                </article>
+                <article>
+                    <p>
+
+                    </p>
+                </article>
+
+                <!-- ********************************************************************************************************* -->
+
+                <form action="../php/OrderProcessing.php" method="post" class="formaInfo">
+                    <div class="port">
+                        <div class="departure_port">
+                            <h3 style="margin-top: 0;">Порт отправления</h3>
+                            <label><input type="radio" value="SPb" name="departure_port">Санкт-Петербург</label><br>
+                            <label><input type="radio" value="Sevastopol" name="departure_port" />Севастополь</label>
+                        </div>
+                        <div class="arrival_port">
+                            <h3 style="margin-top: 0;">Порт прибытия</h3>
+                            <label><input type="radio" value="Amsterdam" name="arrival_port" />Амстердам</label><br>
+                            <label><input type="radio" value="Lisbon" name="arrival_port" />Лиссабон</label>
+                        </div>
+                    </div>
+
+                    <div class="containers_day">
+                        <div class="containers">
+                            <h3>Контейнеры, количество</h3>
+                            <label>2,5 т
+                                <input type="number" name="count_25"
+                                    value="<?=(isset($_SESSION['count_25']) && $_SESSION['count_25']!=null) ? $_SESSION['count_25'] : null ?>">
+                            </label>
+                            <label>5 т
+                                <input type="number" name="count_5" class="count_5"
+                                    value="<?=(isset($_SESSION['count_5']) && $_SESSION['count_5']!=null) ? $_SESSION['count_5'] : null ?>">
+                            </label>
+                            <label>10 т
+                                <input type="number" name="count_10" class="count_10"
+                                    value="<?=(isset($_SESSION['count_10']) && $_SESSION['count_10']!=null) ? $_SESSION['count_10'] : null ?>">
+                            </label>
+
+                        </div>
+                        <div class="day">
+                            <h3>День отгрузки</h3>
+                            <select name="days_week">
+                                <option value="Monday">Понедельник</option>
+                                <option value="Tuesday">Вторник</option>
+                                <option value="Wednesday">Среда</option>
+                                <option value="Thursday">Четверг</option>
+                                <option value="Friday">Пятница</option>
+                                <option value="Saturday">Суббота</option>
+                                <option value="Sunday">Воскресенье</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="dop_services">
+                        <div class="services">
+                            <h3>Дополнительные услуги</h3>
+                            <label><input type="checkbox" name="services[]" value="insurance" />Расширенная
+                                страховка</label><br>
+                            <label><input type="checkbox" name="services[]" value="cargo" />Оформление
+                                грузов</label><br>
+                            <label><input type="checkbox" name="services[]" value="escort" />Юридическое
+                                сопровождение</label>
+                        </div>
+                        <div class="type_loading">
+                            <h3>Тип погрузки</h3>
+                            <label><input type="radio" value="standard" name="loading" />Стандартная
+                                погрузка</label><br>
+                            <label><input type="radio" value="not_standard" name="loading" />Не кантовать</label>
+                        </div>
+                    </div>
+
+                    <div class="submit">
+                        <div class="btm1">
+                            <input type="submit" name="clear" value="Очистить">
+                        </div>
+                        <div class="btm2">
+                            <input type="submit" name="next" value="Продолжить">
+                        </div>
+                    </div>
+
+                </form>
+                <p style="color: red; text-align: center;">
+                    <?=$D?>
+                </p>
+
+                <!-- ********************************************************************************************************* -->
+
+            </section>
+        </section>
+        <footer> Copyright&copy;2012&quot;Морские круизы&quot; </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+header,
+nav,
+section,
+aside,
+footer,
+article {
+    display: block;
+    overflow: hidden;
+}
+
+#main {
+    width: 820px;
+    margin: 10px auto 0px auto;
+    background-color: #FFFFff;
+
+}
+
+#main>header {
+    background-image: url('../img/fon.jpg');
+    height: 127px;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-width: 2px;
+    border-right-color: #C0C0C0;
+    border-bottom-color: #2f4ebc;
+}
+
+aside {
+    width: 247px;
+    float: left;
+    padding-left: 10px;
+    height: 500px;
+}
+
+#main>section {
+
+    background-image: url('../img/menu_fon.jpg');
+    background-repeat: repeat-y;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-right-color: #C0C0C0;
+}
+
+section section {
+
+    width: 540px;
+    float: right;
+    padding-right: 5px;
+    height: 500px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px black;
+    border: 2px solid #C0C0C0;
+    border-radius: 20px;
+}
+
+aside li {
+    font-family: "Times New Roman", Times, serif;
+    color: #d2dce8;
+    font-weight: bold;
+    padding-left: 20px;
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #d2dce8;
+}
+
+a:hover {
+    color: #d2f7fe;
+}
+
+h1 {
+    font-size: 18pt;
+    color: #2040ae;
+    font-style: italic;
+    font-family: georgia, "book antiqua", "times new roman", serif;
+    letter-spacing: -1px;
+    margin: 0px 0px 10px 20px;
+    text-align: right;
+}
+
+p {
+    font-size: 11pt;
+    font-family: "times new roman", serif;
+    text-align: justify;
+    margin: 10px 5px 10px 10px;
+}
+
+article img {
+    margin: 5px;
+}
+
+footer {
+    clear: both;
+
+    height: 30px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #C0C0C0;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 10px;
+    text-align: right;
+    padding-right: 5px;
+    padding-top: 2px;
+    color: #808080;
+}
+
+/* ********************************************************************************** */
+.authorization {
+    width: 230px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.authorization h3 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.authorization input {
+    margin-bottom: 15px;
+    width: 120px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+.authorization label {
+    color: #fff;
+}
+
+.authorization .go {
+    width: 100px;
+    height: 28px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 60px;
+    color: #2040ae;
+}
+
+.authorization .go:hover {
+    background-color: #a8baf4;
+}
+
+
+.formaInfo {
+    width: 500px;
+    padding: 10px;
+    padding-left: 25px;
+    margin: 0 auto;
+    margin-top: -15px;
+}
+
+.formaInfo h3 {
+    margin-bottom: 7px;
+    margin-top: 22px;
+}
+
+.formaInfo .departure_port,
+.formaInfo .containers,
+.formaInfo .services,
+.formaInfo .submit .btm1 {
+    width: 265px;
+    float: left;
+}
+
+.formaInfo .arrival_port,
+.formaInfo .day,
+.formaInfo .type_loading,
+.formaInfo .submit .btm2 {
+    width: 225px;
+    float: right;
+}
+
+.departure_port input,
+.arrival_port input {
+    margin-right: 10px;
+}
+
+.formaInfo .containers_day .containers {
+    display: flex;
+    flex-direction: column;
+}
+
+.formaInfo .containers_day .containers label {
+    margin-bottom: 5px;
+}
+
+.formaInfo .containers_day .containers input {
+    margin-left: 10px;
+}
+
+.formaInfo .containers_day .containers .count_5 {
+    margin-left: 22px;
+}
+
+.formaInfo .containers_day .containers .count_10 {
+    margin-left: 14px;
+}
+
+.formaInfo .services input,
+.formaInfo .type_loading input {
+    margin-right: 10px;
+}
+
+.formaInfo .submit {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.submit {
+    width: 500px;
+    margin: 0 auto;
+
+}
+
+.submit input {
+    margin-top: 30px;
+    border-radius: 20px;
+    width: 130px;
+    padding: 5px;
+    border: 2px solid rgb(36, 31, 199);
+    background-color: rgb(255, 255, 255);
+}
+
+.submit .btm1 {
+    float: left;
+}
+
+.submit .btm2 {
+    float: right;
+}
+
+
+.submit input:hover {
+    background-color: rgb(74, 69, 217);
+    color: #fff;
+}
+
+.table_bill_1 {
+    width: 500px;
+    margin: 0 auto;
+    border-collapse: collapse;
+
+}
+
+.table_bill_1 td {
+    width: 250px;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+.info {
+    width: 500px;
+    margin: 0 auto;
+
+}
+
+.info form {
+    margin-top: 30px;
+    padding-left: 10px;
+}
+
+.info form .name,
+.info form .email {
+    margin-bottom: 10px;
+    margin-left: 15px;
+    height: 25px;
+    border-radius: 7px;
+    padding: 5px;
+    width: 150px;
+}
+
+.info form .document {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.info form .document input {
+    margin-right: 7px;
+}
+
+.info form .document label {
+    margin-right: 70px;
+}
+
+.info form .submit1 {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.info form .submit1 .btm1 {
+    margin-right: 80px;
+}
+
+.info form .submit1 input {
+    margin-top: 25px;
+    border-radius: 20px;
+    width: 130px;
+    padding: 5px;
+    border: 2px solid rgb(36, 31, 199);
+    background-color: rgb(255, 255, 255);
+}
